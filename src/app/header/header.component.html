@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="color-bar">
+  <mat-icon>webhook</mat-icon>
+  Rock-Developers
+  <span class="example-spacer"></span>
+
+  <div *ngIf="getUsername() == ''" >
+    <button mat-raised-button (click)="openDialogSesion()">Iniciar Sesión</button>
+  </div>
+
+  <div *ngIf="getUsername() != ''">
+    <h3>Hola, {{getUsername()}}</h3>
+    <span class="example-spacer"></span>
+    <button mat-raised-button (click)="backToHomePage()">Cerrar Sesión</button>
+  </div>
+  
+</mat-toolbar>

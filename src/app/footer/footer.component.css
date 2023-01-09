@@ -1,0 +1,8 @@
+.foot {
+    background-color: #410e5f;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}

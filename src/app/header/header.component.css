@@ -1,0 +1,11 @@
+mat-toolbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+.color-bar{
+   background-color: #410e5f;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
