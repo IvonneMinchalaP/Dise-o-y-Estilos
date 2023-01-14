@@ -3,6 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { ClientesComponent } from "./components/clientes/clientes.component";
 import { LoginComponent } from "./components/login/login.component";
 import { ProductsComponent } from "./components/products/products.component";
+import { VentasComponent } from "./components/ventas/ventas.component";
 import { ErrorPageComponent } from './error-page/error-page.component';
 //route
 const routes: Routes = [
@@ -10,7 +11,8 @@ const routes: Routes = [
     { path: 'pageInicial', component: ProductsComponent },
     { path: 'cliente', component: ClientesComponent },
     { path: 'sesion', component: LoginComponent },
-    { path: 'error', component: ErrorPageComponent }
+    { path: 'error', component: ErrorPageComponent },
+    { path: 'compras/{id}', component: VentasComponent }
 ]
 
 @NgModule({
